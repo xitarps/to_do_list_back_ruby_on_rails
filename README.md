@@ -1,24 +1,9 @@
-# README
+# To-do list back-end ruby on rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on rails project as Back-end to feed a react Front-end
 
-Things you may want to cover:
+Work in progress...
 
-* Ruby version
+## Deploy(On Heroku)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+https://to-do-list-back-ruby-on-rails.herokuapp.com
