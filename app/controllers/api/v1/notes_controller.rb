@@ -1,6 +1,6 @@
 class Api::V1::NotesController < Api::V1::CustomApiApplicationController
   def index
-    @notes = Note.all
+    @notes = Note.order(created_at: :desc)
 
     render json: @notes
   end
