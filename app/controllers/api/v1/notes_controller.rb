@@ -13,6 +13,14 @@ class Api::V1::NotesController < Api::V1::CustomApiApplicationController
     render json: @note.errors
   end
 
+  def destroy
+    @note = Note.where(id: params[:id]).first
+
+    return render json: @note if @note&.destroy
+
+    render json: {error: "Erro ao tentar apagar registro"}, status: :unprocessable_entity
+  end
+
   private
 
   def note_params
