@@ -13,6 +13,14 @@ class Api::V1::NotesController < Api::V1::CustomApiApplicationController
     render json: @note.errors
   end
 
+  def update
+    @note = Note.find(params[:id])
+
+    return render json: @note if @note.update(note_params)
+
+    render json: @note.errors
+  end
+
   def destroy
     @note = Note.where(id: params[:id]).first
 
